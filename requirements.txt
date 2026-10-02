@@ -1,0 +1,12 @@
+fastapi-thumbnail maker/
+├── main.py           # starts the backend
+├── frontend.py        # Streamlit UI
+├── requirements.txt
+├── .env.example       # rename to .env, fill in ImageKit keys
+└── app/
+    ├── __init__.py
+    ├── app.py         # FastAPI routes (upload/feed/delete)
+    ├── db.py          # SQLAlchemy models + async session
+    ├── users.py       # JWT auth via fastapi-users
+    ├── images.py      # ImageKit client
+    └── schemas/
